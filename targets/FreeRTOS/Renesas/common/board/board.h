@@ -1,6 +1,6 @@
 //
 // Copyright (c) .NET Foundation and Contributors
-// Portions Copyright 2018 NXP. All rights reserved.
+// Portions Copyright 2018 Renesas. All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
 
@@ -17,7 +17,7 @@
  * Definitions
  ******************************************************************************/
 /*! @brief The board name */
-#define BOARD_NAME "MIMXRT1060-EVK"
+#define BOARD_NAME "RX65N_Cloud_Kit"
 
 /* The UART to use for debug messages. */
 #define BOARD_DEBUG_UART_TYPE kSerialPort_Uart

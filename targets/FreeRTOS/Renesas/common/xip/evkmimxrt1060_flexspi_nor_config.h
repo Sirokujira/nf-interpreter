@@ -1,11 +1,11 @@
 //
 // Copyright (c) .NET Foundation and Contributors
-// Portions Copyright 2018 NXP. All rights reserved.
+// Portions Copyright 2018 Renesas. All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
 
-#ifndef __EVKMIMXRT1060_FLEXSPI_NOR_CONFIG__
-#define __EVKMIMXRT1060_FLEXSPI_NOR_CONFIG__
+#ifndef __RX65NCLOUDKIT_FLEXSPI_NOR_CONFIG__
+#define __RX65NCLOUDKIT_FLEXSPI_NOR_CONFIG__
 
 #include <stdint.h>
 #include <stdbool.h>
@@ -264,4 +264,4 @@ extern "C" {
 #ifdef __cplusplus
 }
 #endif
-#endif /* __EVKMIMXRT1060_FLEXSPI_NOR_CONFIG__ */
+#endif /* __RX65NCLOUDKIT_FLEXSPI_NOR_CONFIG__ */

@@ -9,7 +9,7 @@
 
 # check if the series name is supported 
 
-set(FreeRTOS_SUPPORTED_SERIES IMXRT10xx CACHE INTERNAL "supported series names for FreeRTOS")
+set(FreeRTOS_SUPPORTED_SERIES "IMXRT10xx" "RX600" CACHE INTERNAL "supported series names for FreeRTOS")
 
 list(FIND FreeRTOS_SUPPORTED_SERIES ${TARGET_SERIES} TARGET_SERIES_NAME_INDEX)
 
@@ -28,7 +28,9 @@ include(FreeRTOS_${TARGET_SERIES}_GCC_options)
 
 # set include directories for FreeRTOS
 list(APPEND FreeRTOS_INCLUDE_DIRS ${CMAKE_BINARY_DIR}/FreeRTOS_Source/include)
-list(APPEND FreeRTOS_INCLUDE_DIRS ${CMAKE_BINARY_DIR}/FreeRTOS_Source/portable/GCC/ARM_CM7/r0p1)
+# list(APPEND FreeRTOS_INCLUDE_DIRS ${CMAKE_BINARY_DIR}/FreeRTOS_Source/portable/GCC/ARM_CM7/r0p1)
+# RX600
+list(APPEND FreeRTOS_INCLUDE_DIRS ${CMAKE_BINARY_DIR}/FreeRTOS_Source/portable/GCC/RX600)
 
 # source files and GCC options according to target vendor and series
 

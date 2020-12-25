@@ -9,7 +9,7 @@
 #include <nanoCLR_Checks.h>
 #include <nf_rt_native.h>
 
-#if !defined(NXP_USE_RTC) 
+#if !defined(Renesas_USE_RTC) 
     #error "Need the RTC to be enabled. Please set CMake option NF_FEATURE_RTC to ON."
 #endif
 

@@ -2,7 +2,7 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "NXP_MIMXRT1060_EVK",
+      "name": "RX65N_Cloud_Kit",
       "type": "cppdbg",
       "request": "launch",
       "program": "${workspaceFolder}/Build/nanoCLR.elf",
@@ -50,7 +50,7 @@
           "text": "set remotetimeout 60"
         },
         {
-          "text": "target extended-remote | C:/nxp/MCUXpressoIDE_10.2.1_795/ide/bin/crt_emu_cm_redlink.exe -g -mi -2 -pMIMXRT1062xxxxA -vendor=NXP --reset= -cache=disable --flash-dir=C:/nxp/MCUXpressoIDE_10.2.1_795/ide/bin/Flash --flash-driver=MIMXRT1060_SFDP_QSPI.cfx --no-packed"
+          "text": "target extended-remote | C:/nxp/MCUXpressoIDE_10.2.1_795/ide/bin/crt_emu_cm_redlink.exe -g -mi -2 -pMIMXRT1062xxxxA -vendor=Renesas --reset= -cache=disable --flash-dir=C:/nxp/MCUXpressoIDE_10.2.1_795/ide/bin/Flash --flash-driver=MIMXRT1060_SFDP_QSPI.cfx --no-packed"
         },
         {
           "text": "set mem inaccessible-by-default off"

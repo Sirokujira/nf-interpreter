@@ -3,7 +3,8 @@
 # See LICENSE file in the project root for full license information.
 #
 
-include(binutils.arm-none-eabi)
+# include(binutils.arm-none-eabi)
+include(binutils.rx-elf)
 include(binutils.FreeRTOS)
 include(nf_utils)
 
@@ -257,6 +258,22 @@ if(EXISTS ${CMAKE_SOURCE_DIR}/targets/FreeRTOS/NXP/${TARGET_BOARD})
     # add TARGET board directory
     add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/NXP/${TARGET_BOARD})
 
+elseif(EXISTS ${CMAKE_SOURCE_DIR}/targets/FreeRTOS/Renesas/${TARGET_BOARD})
+
+    # board found
+    message(STATUS "Support for target board '${TARGET_BOARD}' found")
+
+    # Define base path for the class libraries
+    SET_BASE_PATH_FOR_LIBRARIES_MODULES(${CMAKE_SOURCE_DIR}/targets/FreeRTOS/Renesas/nanoCLR)
+
+    # set target base location
+    set(TARGET_BASE_LOCATION ${CMAKE_SOURCE_DIR}/targets/FreeRTOS/Renesas/${TARGET_BOARD})
+
+    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Renesas)
+
+    # add TARGET board directory
+    add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Renesas/${TARGET_BOARD})
+
 # try to find board in the targets folder
 elseif(EXISTS ${CMAKE_SOURCE_DIR}/targets/FreeRTOS/ST/${TARGET_BOARD})
 
@@ -292,6 +309,23 @@ else()
 
         # add TARGET board directory from Community
         add_subdirectory(${CMAKE_SOURCE_DIR}/targets-community/FreeRTOS/NXP/${TARGET_BOARD})
+
+    # try to find Renesas board in the Community targets folder
+    elseif(EXISTS ${CMAKE_SOURCE_DIR}/targets-community/FreeRTOS/Renesas/${TARGET_BOARD})
+
+        # board found
+        message(STATUS "Support for target board '${TARGET_BOARD}' found in Community targets")
+
+        # Define base path for the class libraries
+        SET_BASE_PATH_FOR_LIBRARIES_MODULES(${CMAKE_SOURCE_DIR}/targets/FreeRTOS/Renesas/nanoCLR)
+
+        # set target base location
+        set(TARGET_BASE_LOCATION ${CMAKE_SOURCE_DIR}/targets-community/FreeRTOS/Renesas/${TARGET_BOARD})
+
+        add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Renesas)
+
+        # add TARGET board directory from Community
+        add_subdirectory(${CMAKE_SOURCE_DIR}/targets-community/FreeRTOS/Renesas/${TARGET_BOARD})
 
     # try to find STM board in the Community targets folder
     elseif(EXISTS ${CMAKE_SOURCE_DIR}/targets-community/FreeRTOS/ST/${TARGET_BOARD})

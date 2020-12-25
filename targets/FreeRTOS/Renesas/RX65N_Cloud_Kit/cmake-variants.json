@@ -22,8 +22,8 @@
   "linkage": {
     "default": "",
     "choices": {
-      "NXP_MIMXRT1060_EVK": {
-        "short": "NXP_MIMXRT1060_EVK",
+      "RX65N_Cloud_Kit": {
+        "short": "RX65N_Cloud_Kit",
         "settings": {
           "BUILD_VERSION": "0.9.99.999",
           "CMAKE_TOOLCHAIN_FILE": "CMake/toolchain.arm-none-eabi.cmake",
@@ -32,7 +32,7 @@
           "TARGET_SERIES": "IMXRT10xx",
           "SUPPORT_ANY_BASE_CONVERSION": "ON",
           "RTOS": "FREERTOS",
-          "TARGET_BOARD": "NXP_MIMXRT1060_EVK",
+          "TARGET_BOARD": "RX65N_Cloud_Kit",
           "RTOS_VERSION": "",
           "CMSIS_VERSION": "",
           "FATFS_VERSION": "",

@@ -1,6 +1,6 @@
 //
 // Copyright (c) .NET Foundation and Contributors
-// Portions Copyright 2018 NXP. All rights reserved.
+// Portions Copyright 2018 Renesas. All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
 
@@ -17,7 +17,7 @@ processor: MIMXRT1062xxxxA
 package_id: MIMXRT1062DVL6A
 mcu_data: ksdk2_0
 processor_version: 0.0.0
-board: MIMXRT1060-EVK
+board: RX65N_Cloud_Kit
 pin_labels:
 - {pin_num: E3, pin_signal: GPIO_EMC_00, label: SEMC_D0, identifier: SEMC_D0}
 - {pin_num: F3, pin_signal: GPIO_EMC_01, label: SEMC_D1, identifier: SEMC_D1}

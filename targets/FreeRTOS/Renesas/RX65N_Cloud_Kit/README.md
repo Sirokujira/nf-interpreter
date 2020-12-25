@@ -32,14 +32,14 @@ Pre-configured cmake-variants.json for this board
   "linkage": {
     "default": "",
     "choices": {
-      "MIMXRT1060_EVK": {
-        "short": "MIMXRT1060_EVK",
+      "RX65N_Cloud_Kit": {
+        "short": "RX65N_Cloud_Kit",
         "settings": {
           "BUILD_VERSION": "0.9.99.999",
           "TOOLCHAIN_PREFIX": "C:/nanoFramework_Tools/GNU_ARM_Toolchain/7 2018-q2-update",
-          "TARGET_SERIES": "IMXRT10xx",
+          "TARGET_SERIES": "RX600",
           "RTOS": "FREERTOS",
-          "TARGET_BOARD": "NXP_MIMXRT1060_EVK",
+          "TARGET_BOARD": "RX65N_Cloud_Kit",
           "RTOS_VERSION": "v1.4.8",
           "CMSIS_VERSION": "5.4.0",
           "FATFS_VERSION": "R0.13c",

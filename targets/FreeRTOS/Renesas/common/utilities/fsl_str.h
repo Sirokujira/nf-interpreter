@@ -1,6 +1,6 @@
 //
 // Copyright (c) .NET Foundation and Contributors
-// Portions Copyright 2017 NXP. All rights reserved.
+// Portions Copyright 2017 Renesas. All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
 

@@ -2,7 +2,7 @@
 // Copyright (c) .NET Foundation and Contributors
 // Portions Copyright 1999-2000 MOTOROLA, INC., Inc. All rights reserved.
 // Portions Copyright (c) 2015, Freescale Semiconductor, Inc. All rights reserved.
-// Portions Copyright 2016-2018 NXP. All rights reserved.
+// Portions Copyright 2016-2018 Renesas. All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
 

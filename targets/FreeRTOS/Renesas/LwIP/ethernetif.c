@@ -2,7 +2,7 @@
 // Copyright (c) .NET Foundation and Contributors
 // Portions Copyright (c) 2001-2004 Swedish Institute of Computer Science. All rights reserved.
 // Portions Copyright (c) 2013-2016, Freescale Semiconductor, Inc. All rights reserved.
-// Portions Copyright 2016-2019 NXP All rights reserved.
+// Portions Copyright 2016-2019 Renesas All rights reserved.
 // See LICENSE file in the project root for full license information.
 //
 
@@ -39,7 +39,7 @@
 
 /*
  * Copyright (c) 2013-2016, Freescale Semiconductor, Inc.
- * Copyright 2016-2019 NXP
+ * Copyright 2016-2019 Renesas
  * All rights reserved.
  *
  * SPDX-License-Identifier: BSD-3-Clause

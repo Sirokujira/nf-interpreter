@@ -1,7 +1,7 @@
 //
 // Copyright (c) .NET Foundation and Contributors
 // Portions Copyright (c) 2015, Freescale Semiconductor, Inc.
-// Portions Copyright 2016 NXP
+// Portions Copyright 2016 Renesas
 // See LICENSE file in the project root for full license information.
 //
 
